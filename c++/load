@@ -1,0 +1,5 @@
+#!/bin/bash
+
+POS="$(cd $(dirname $0); pwd -P)"
+
+g++ -o ${POS}/cam ${POS}/cam.cpp $(pkg-config --cflags --libs opencv4)
